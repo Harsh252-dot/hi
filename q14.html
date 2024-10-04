@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimony Service Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: url('data:image/jpeg;base64,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') no-repeat center center/cover;
+            height: 100vh;
+            position: cover;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .header-content p {
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+
+        .search-form {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-form select, .search-form input, .search-form button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+
+        .search-form select, .search-form input {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .search-form button {
+            background-color: #d31f4b;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .cta-banner {
+            background-color: #2f2a48;
+            padding: 30px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .cta-banner h2 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .cta-banner button {
+            padding: 15px 30px;
+            background-color: #ffba00;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .features {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .features .feature-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+        }
+
+        .feature img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #666;
+        }
+
+        .testimonials {
+            padding: 50px;
+            background-color: #f9fafb;
+        }
+
+        .testimonials h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .testimonial-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .testimonial h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .testimonial p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Trusted Matrimony & Matchmaking Service</h1>
+            <p>Find your perfect match today</p>
+            <div class="search-form">
+                <select>
+                    <option value="man">I'm looking for a Man</option>
+                    <option value="woman">I'm looking for a Woman</option>
+                </select>
+                <input type="number" placeholder="Age from">
+                <input type="number" placeholder="Age to">
+                <input type="text" placeholder="Religion">
+                <input type="text" placeholder="Mother Tongue">
+                <button>Let's Begin</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner">
+        <h2>Exclusive & Personalised Matchmaking by Shaadi.com</h2>
+        <p>Top Rated Consultants, 6 Times Higher Success Rates, 100% Privacy</p>
+        <button>Get Invited</button>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Find your Special Someone</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <img src="signup-icon-placeholder.jpg" alt="Sign Up">
+                <h3>Sign Up</h3>
+                <p>Register for free and begin your matchmaking journey.</p>
+            </div>
+            <div class="feature">
+                <img src="connect-icon-placeholder.jpg" alt="Connect">
+                <h3>Connect</h3>
+                <p>Select & connect with members you like.</p>
+            </div>
+            <div class="feature">
+                <img src="interact-icon-placeholder.jpg" alt="Interact">
+                <h3>Interact</h3>
+                <p>Become a Premium Member & start a conversation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Matrimony Service with Millions of Success Stories</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <img src="testimonial-image-placeholder.jpg" alt="Testimonial 1">
+                <h3>Sireesh & Sanju</h3>
+                <p>The best thing happened to us, thanks to Shaadi.com!</p>
+            </div>
+            <div class="testimonial">
+                <img src="testimonial-image-placeholder.jpg" alt="Testimonial 2">
+                <h3>Shubham & Nidhi</h3>
+                <p>We met, we liked, and now we are together for life.</p>
+            </div>
+            <div class="testimonial">
+                <img src="testimonial-image-placeholder.jpg" alt="Testimonial 3">
+                <h3>Vinita & Mandeep</h3>
+                <p>We were looking for love, and found it here!</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

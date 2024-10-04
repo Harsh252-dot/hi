@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Partner Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #eaeaea;
+            padding: 20px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .login a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .login button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #f9fafb;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .cta {
+            display: flex;
+            gap: 10px;
+        }
+
+        .cta input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+        }
+
+        .cta button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .person-info {
+            margin-top: 10px;
+        }
+
+        .partners-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .partners-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .partners-section p {
+            margin-bottom: 50px;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .partner-types {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .partner-type {
+            width: 22%;
+            text-align: left;
+        }
+
+        .partner-type img {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .partner-type h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .partner-type p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Shopify Partners</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Shopify Academy</a></li>
+                </ul>
+            </nav>
+            <div class="login">
+                <a href="#">Log in</a>
+                <button>Join now</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Build your business as a Shopify Partner</h1>
+            <p>Increase your earnings, enhance your skills, and expand your network as part of our thriving global community of agency, app, consulting, and technology partners.</p>
+            <div class="cta">
+                <input type="email" placeholder="Enter your email address">
+                <button>Join now</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="image-placeholder.jpg" alt="Shopify Partner Image">
+            <p class="person-info">Laura Qureshi<br>Shopify Plus Partner, Overdose Digital, Melbourne</p>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section class="partners-section">
+        <h2>Ways to partner with Shopify</h2>
+        <p>Our partners range from global enterprises to startups and entrepreneurs. We’re proud to collaborate with thousands of partners to power the commerce of millions of businesses.</p>
+
+        <div class="partner-types">
+            <div class="partner-type">
+                <img src="image-placeholder.jpg" alt="Agency Partner Image">
+                <h3>Agency Partners</h3>
+                <p>Earn revenue by introducing clients to Shopify. Gain unlimited access to our web-based development environment as you design, build, test, and optimize stores.</p>
+            </div>
+            <div class="partner-type">
+                <img src="image-placeholder.jpg" alt="App Partner Image">
+                <h3>App Partners</h3>
+                <p>Develop and launch your app to the Shopify App Store, where millions of Shopify merchants can use it to help them build and scale their business.</p>
+            </div>
+            <div class="partner-type">
+                <img src="image-placeholder.jpg" alt="Consulting Partner Image">
+                <h3>Consulting Partners</h3>
+                <p>Deepen your consulting and implementation expertise to drive commerce transformation across the enterprise.</p>
+            </div>
+            <div class="partner-type">
+                <img src="image-placeholder.jpg" alt="Technology Partner Image">
+                <h3>Technology Partners</h3>
+                <p>Build software integrations and applications with Shopify APIs to improve processes and experiences for joint customers.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
